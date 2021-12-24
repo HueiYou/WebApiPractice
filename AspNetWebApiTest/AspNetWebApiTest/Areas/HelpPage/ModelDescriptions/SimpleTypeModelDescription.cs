@@ -1,0 +1,6 @@
+namespace AspNetWebApiTest.Areas.HelpPage.ModelDescriptions
+{
+    public class SimpleTypeModelDescription : ModelDescription
+    {
+    }
+}

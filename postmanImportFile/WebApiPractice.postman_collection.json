@@ -1,0 +1,1814 @@
+{
+	"info": {
+		"_postman_id": "dcf5a2f1-0d23-433e-9125-f11c74749d49",
+		"name": "WebApiPractice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ValuesController",
+			"item": [
+				{
+					"name": "api/Values",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Domain}}/api/Values",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"Values"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/Values_Get",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Domain}}/api/Values",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"api",
+										"Values"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcVmFsdWVz?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 15:04:09 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "19"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"value1\",\n    \"value2\"\n]"
+						}
+					]
+				},
+				{
+					"name": "api/Values/5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Domain}}/api/Values/5",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"Values",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "範例2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Domain}}/api/Values?id=5",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"api",
+										"Values"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcVmFsdWVz?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 15:05:27 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "7"
+								}
+							],
+							"cookie": [],
+							"body": "\"value\""
+						},
+						{
+							"name": "範例1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Domain}}/api/Values/5",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"api",
+										"Values",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcVmFsdWVzXDU=?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 15:05:01 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "7"
+								}
+							],
+							"cookie": [],
+							"body": "\"value\""
+						}
+					]
+				},
+				{
+					"name": "api/Values",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"test\"",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Domain}}/api/Values",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"Values"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/Values_Post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\"test\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Domain}}/api/Values",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"api",
+										"Values"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcVmFsdWVz?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 15:06:04 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12"
+								}
+							],
+							"cookie": [],
+							"body": "\"value=test\""
+						}
+					]
+				},
+				{
+					"name": "api/Values/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"aaa\"",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Domain}}/api/Values/1",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"Values",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/Values/1",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\"aaa\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Domain}}/api/Values/1",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"api",
+										"Values",
+										"1"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcVmFsdWVzXDE=?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 15:07:56 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "api/values/5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Domain}}/api/values/5",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"values",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/values/5",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{Domain}}/api/values/5",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"api",
+										"values",
+										"5"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcdmFsdWVzXDU=?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 15:09:31 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "HttpStatusApiController",
+			"item": [
+				{
+					"name": "HttpStatusApi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Domain}}/api/HttpStatusApi/200",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"HttpStatusApi",
+								"200"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "HttpStatus_500 Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:49584/api/HttpStatusApi/500",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "49584",
+									"path": [
+										"api",
+										"HttpStatusApi",
+										"500"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcSHR0cFN0YXR1c0FwaVw1MDA=?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 14:22:33 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "336"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Message\": \"發生錯誤。\",\n    \"ExceptionMessage\": \"發生伺服器錯誤\",\n    \"ExceptionType\": \"System.Exception\",\n    \"StackTrace\": \"   於 AspNetWebApiTest.Controllers.HttpStatusApiController.Get(Int32 id) 於 C:\\\\Users\\\\shengsen\\\\source\\\\repos\\\\WebApiPractice\\\\AspNetWebApiTest\\\\AspNetWebApiTest\\\\Controllers\\\\HttpStatusApiController.cs: 行 27\"\n}"
+						},
+						{
+							"name": "HttpStatus_404 Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:49584/api/HttpStatusApi/123",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "49584",
+									"path": [
+										"api",
+										"HttpStatusApi",
+										"123"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcSHR0cFN0YXR1c0FwaVwxMjM=?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 14:21:48 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "HttpStatus_200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:49584/api/HttpStatusApi/200",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "49584",
+									"path": [
+										"api",
+										"HttpStatusApi",
+										"200"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcSHR0cFN0YXR1c0FwaVwyMDA=?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 14:20:59 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "17"
+								}
+							],
+							"cookie": [],
+							"body": "\"你傳入了200\""
+						},
+						{
+							"name": "HttpStatus_400 Bad Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:49584/api/HttpStatusApi/400",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "49584",
+									"path": [
+										"api",
+										"HttpStatusApi",
+										"400"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcSHR0cFN0YXR1c0FwaVw0MDA=?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 14:21:19 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "29"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Message\": \"你傳入了400\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "RouteApiController",
+			"item": [
+				{
+					"name": "Test/RouteApi/post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"a\"",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Domain}}/Test/RouteApi/post",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"Test",
+								"RouteApi",
+								"post"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "RouteApi",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\"a\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Domain}}/Test/RouteApi/post",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"Test",
+										"RouteApi",
+										"post"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxUZXN0XFJvdXRlQXBpXHBvc3Q=?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 14:28:49 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "14"
+								}
+							],
+							"cookie": [],
+							"body": "\"Post value=a\""
+						}
+					]
+				},
+				{
+					"name": "Test/RouteApi/Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Domain}}/Test/RouteApi/Get",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"Test",
+								"RouteApi",
+								"Get"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Test/RouteApi/Get",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Domain}}/Test/RouteApi/Get",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"Test",
+										"RouteApi",
+										"Get"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxUZXN0XFJvdXRlQXBpXEdldA==?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 14:34:20 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"value11\",\n    \"value12\"\n]"
+						}
+					]
+				},
+				{
+					"name": "Test/RouteApi/Get/5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Domain}}/Test/RouteApi/Get/5",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"Test",
+								"RouteApi",
+								"Get",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Test/RouteApi/Get/5",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Domain}}/Test/RouteApi/Get/5",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"Test",
+										"RouteApi",
+										"Get",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxUZXN0XFJvdXRlQXBpXEdldFw1?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 14:34:59 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "10"
+								}
+							],
+							"cookie": [],
+							"body": "\"Get id=5\""
+						}
+					]
+				},
+				{
+					"name": "api/RouteApi_Get2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Domain}}/api/RouteApi",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"RouteApi"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get2_api/RouteApi",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Domain}}/api/RouteApi",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"api",
+										"RouteApi"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcUm91dGVBcGk=?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 14:35:56 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"value21\",\n    \"value22\"\n]"
+						}
+					]
+				},
+				{
+					"name": "Test/RouteApi/Put/5",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"test\"",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Domain}}/Test/RouteApi/Put/5",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"Test",
+								"RouteApi",
+								"Put",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Test/RouteApi/Put/5",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\"test\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Domain}}/Test/RouteApi/Put/5",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"Test",
+										"RouteApi",
+										"Put",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxUZXN0XFJvdXRlQXBpXFB1dFw1?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 14:39:08 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "27"
+								}
+							],
+							"cookie": [],
+							"body": "\"Get id=5, Post value=test\""
+						}
+					]
+				},
+				{
+					"name": "Test/RouteApi/Delete/5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Domain}}/Test/RouteApi/Delete/5",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"Test",
+								"RouteApi",
+								"Delete",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Test/RouteApi/Delete/5",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{Domain}}/Test/RouteApi/Delete/5",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"Test",
+										"RouteApi",
+										"Delete",
+										"5"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxUZXN0XFJvdXRlQXBpXERlbGV0ZVw1?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Dec 2021 14:39:45 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "LogTablesAsyncApiController",
+			"item": [
+				{
+					"name": "api/LogTablesAsyncApi",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Domain}}/api/LogTablesAsyncApi",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"LogTablesAsyncApi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/LogTablesAsyncApi/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Domain}}/api/LogTablesAsyncApi/1",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"LogTablesAsyncApi",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example_404 Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Domain}}/api/RegionsAsyncApi/1",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"api",
+										"RegionsAsyncApi",
+										"1"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcUmVnaW9uc0FzeW5jQXBpXDE=?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, OPTIONS"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Dec 2021 15:04:41 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "197"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Message\": \"找不到與要求 URI 'http://localhost:49584/api/RegionsAsyncApi/1' 相符的 HTTP 資源。\",\n    \"MessageDetail\": \"找不到與名稱為 'RegionsAsyncApi' 的控制器相符的類型。\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/LogTablesAsyncApi",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CreateTime\": \"2021-12-23T00:00:00\",\r\n    \"Level\": \"info\",\r\n    \"Logger\": \"test2\",\r\n    \"Message\": \"test2\",\r\n    \"Exception\": \"test2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Domain}}/api/LogTablesAsyncApi",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"LogTablesAsyncApi"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/LogTablesAsyncApi",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"CreateTime\": \"2021-12-23T00:00:00\",\r\n    \"Level\": \"info\",\r\n    \"Logger\": \"test2\",\r\n    \"Message\": \"test2\",\r\n    \"Exception\": \"test2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Domain}}/api/LogTablesAsyncApi",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"api",
+										"LogTablesAsyncApi"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:49584/api/LogTablesAsyncApi/2"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcTG9nVGFibGVzQXN5bmNBcGk=?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, OPTIONS"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Dec 2021 15:37:04 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "113"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Id\": 2,\n    \"CreateTime\": \"2021-12-23T00:00:00\",\n    \"Level\": \"info\",\n    \"Logger\": \"test2\",\n    \"Message\": \"test2\",\n    \"Exception\": \"test2\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/LogTablesAsyncApi/2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 2,\r\n    \"CreateTime\": \"2021-12-23T00:00:00\",\r\n    \"Level\": \"info\",\r\n    \"Logger\": \"test21\",\r\n    \"Message\": \"test2\",\r\n    \"Exception\": \"test2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Domain}}/api/LogTablesAsyncApi/2",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"LogTablesAsyncApi",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/LogTablesAsyncApi/2",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Id\": 2,\r\n    \"CreateTime\": \"2021-12-23T00:00:00\",\r\n    \"Level\": \"info\",\r\n    \"Logger\": \"test21\",\r\n    \"Message\": \"test2\",\r\n    \"Exception\": \"test2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Domain}}/api/LogTablesAsyncApi/2",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"api",
+										"LogTablesAsyncApi",
+										"2"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcTG9nVGFibGVzQXN5bmNBcGlcMg==?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, OPTIONS"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Dec 2021 15:40:40 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "api/LogTablesAsyncApi/3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Domain}}/api/LogTablesAsyncApi/3",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"LogTablesAsyncApi",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "api/LogTablesAsyncApi/3",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{Domain}}/api/LogTablesAsyncApi/3",
+									"host": [
+										"{{Domain}}"
+									],
+									"path": [
+										"api",
+										"LogTablesAsyncApi",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-SourceFiles",
+									"value": "=?UTF-8?B?QzpcVXNlcnNcc2hlbmdzZW5cc291cmNlXHJlcG9zXFdlYkFwaVByYWN0aWNlXEFzcE5ldFdlYkFwaVRlc3RcQXNwTmV0V2ViQXBpVGVzdFxhcGlcTG9nVGFibGVzQXN5bmNBcGlcMw==?="
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, OPTIONS"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Dec 2021 15:43:46 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "113"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Id\": 3,\n    \"CreateTime\": \"2021-12-23T00:00:00\",\n    \"Level\": \"info\",\n    \"Logger\": \"test2\",\n    \"Message\": \"test2\",\n    \"Exception\": \"test2\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

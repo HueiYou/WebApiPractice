@@ -1,0 +1,86 @@
+﻿
+<div>
+    <h1>同步/非同步呼叫API</h1>
+    <div>
+        <button type="button" onclick="CallApi();">Call API</button>
+        <button type="button" onclick="CallAsyncApi();">Call Async API</button>
+        <button type="button" onclick="FunClick();">Click</button>
+    </div>
+
+    <h1>檔案上傳/下載</h1>
+    <div>
+        <input type="file" name="Attachment" id="Attachment" />
+        <button type="button" onclick="FileUpload()">上傳檔案</button>
+        <p class="display-4" id="result"></p>
+    </div>
+</div>
+
+@section scripts
+{
+    <script>
+        // 呼叫API
+        $.ajax({
+            url: "/api/Values?value=123&value2=456",
+            type: 'post',
+            success: function (res) {
+                console.log(res);
+            },
+            error: function (xhr, status, errorThrown) {
+                console.log(xhr, status, errorThrown);
+            },
+        });
+
+        /**同步呼叫API */
+        function CallApi() {
+            $.ajax({
+                async: false,
+                url: "/api/values",
+                type: 'get',
+                success: function (res) {
+                    console.log(res);
+                },
+                error: function (xhr, status, errorThrown) {
+                    console.log(xhr, status, errorThrown);
+                },
+            });
+        }
+
+        /**非同步呼叫API */
+        function CallAsyncApi() {
+            $.ajax({
+                url: "/api/LogTablesAsyncApi/3",
+                type: 'get',
+                success: function (res) {
+                    console.log(res);
+                },
+                error: function (xhr, status, errorThrown) {
+                    console.log(xhr, status, errorThrown);
+                },
+            });
+        }
+
+        function FunClick() {
+            alert("click");
+        }
+
+        /**檔案上傳 */
+        function FileUpload() {
+            var file_data = $('#Attachment').prop('files')[0];   // 取得上傳檔案屬性
+            var data = new FormData();
+            data.append('Attachment', file_data);  // 新增檔案參數
+
+            $.ajax({
+                url: "/api/FileUploadApi",
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: data,
+                type: 'post',
+                success: function (data) {
+                    $('#result').text(data);
+                }
+            });
+        }
+    </script>
+}
+

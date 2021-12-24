@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "4b39e662-c86e-4af2-9722-dfee31b1c7c4",
+		"name": "MockyAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得訂單資訊",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://run.mocky.io/v3/3efe426c-2fa1-4311-8013-d4c425a09156",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"3efe426c-2fa1-4311-8013-d4c425a09156"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "取得訂單資訊",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://run.mocky.io/v3/3efe426c-2fa1-4311-8013-d4c425a09156",
+							"protocol": "https",
+							"host": [
+								"run",
+								"mocky",
+								"io"
+							],
+							"path": [
+								"v3",
+								"3efe426c-2fa1-4311-8013-d4c425a09156"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Dec 2021 15:02:21 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1007"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01FQHAM8K5BEYKAXB9EGD9Y9A9"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"OrderID\": 10248,\n        \"CustomerID\": \"VINET\",\n        \"EmployeeID\": 5,\n        \"OrderDate\": \"1996-07-04T01:00:00\",\n        \"RequiredDate\": \"1996-08-01T00:00:00\",\n        \"ShippedDate\": \"1996-07-16T00:00:00\",\n        \"ShipVia\": 3,\n        \"Freight\": 32.38,\n        \"ShipName\": \"Vins et alcools Chevalier\",\n        \"ShipAddress\": \"59 rue de l'Abbaye\",\n        \"ShipCity\": \"Reims\",\n        \"ShipPostalCode\": \"51100\",\n        \"ShipCountry\": \"France\"\n    },\n    {\n        \"OrderID\": 10249,\n        \"CustomerID\": \"TOMSP\",\n        \"EmployeeID\": 6,\n        \"OrderDate\": \"1996-07-05T00:00:00\",\n        \"RequiredDate\": \"1996-08-16T00:00:00\",\n        \"ShippedDate\": \"1996-07-10T00:00:00\",\n        \"ShipVia\": 1,\n        \"Freight\": 11.61,\n        \"ShipName\": \"Toms Spezialitäten\",\n        \"ShipAddress\": \"Luisenstr. 48\",\n        \"ShipCity\": \"Münster\",\n        \"ShipPostalCode\": \"44087\",\n        \"ShipCountry\": \"Germany\"\n    },\n    {\n        \"OrderID\": 10250,\n        \"CustomerID\": \"HANAR\",\n        \"EmployeeID\": 4,\n        \"OrderDate\": \"1996-07-08T00:00:00\",\n        \"RequiredDate\": \"1996-08-05T00:00:00\",\n        \"ShippedDate\": \"1996-07-12T00:00:00\",\n        \"ShipVia\": 2,\n        \"Freight\": 65.83,\n        \"ShipName\": \"Hanari Carnes\",\n        \"ShipAddress\": \"Rua do Paço, 67\",\n        \"ShipCity\": \"Rio de Janeiro\",\n        \"ShipRegion\": \"RJ\",\n        \"ShipPostalCode\": \"05454-876\",\n        \"ShipCountry\": \"Brazil\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
