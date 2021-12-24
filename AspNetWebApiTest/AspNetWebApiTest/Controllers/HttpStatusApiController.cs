@@ -12,7 +12,6 @@ namespace AspNetWebApiTest.Controllers
         // GET: api/HttpStatusApi/5
         public IHttpActionResult Get(int id)
         {
-
             try
             {
                 string result = "你傳入了" + id;

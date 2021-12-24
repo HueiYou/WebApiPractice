@@ -6,13 +6,6 @@
         <button type="button" onclick="CallAsyncApi();">Call Async API</button>
         <button type="button" onclick="FunClick();">Click</button>
     </div>
-
-    <h1>檔案上傳/下載</h1>
-    <div>
-        <input type="file" name="Attachment" id="Attachment" />
-        <button type="button" onclick="FileUpload()">上傳檔案</button>
-        <p class="display-4" id="result"></p>
-    </div>
 </div>
 
 @section scripts
@@ -61,25 +54,6 @@
 
         function FunClick() {
             alert("click");
-        }
-
-        /**檔案上傳 */
-        function FileUpload() {
-            var file_data = $('#Attachment').prop('files')[0];   // 取得上傳檔案屬性
-            var data = new FormData();
-            data.append('Attachment', file_data);  // 新增檔案參數
-
-            $.ajax({
-                url: "/api/FileUploadApi",
-                cache: false,
-                contentType: false,
-                processData: false,
-                data: data,
-                type: 'post',
-                success: function (data) {
-                    $('#result').text(data);
-                }
-            });
         }
     </script>
 }
